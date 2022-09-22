@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 class Navbar extends Component {
     render() { 
+        console.log(this.props)
         return (
             <div style={{
                 backgroundColor: '#000',
@@ -19,7 +20,7 @@ class Navbar extends Component {
                         paddingLeft:'1rem',
                         backgroundColor: 'rgba(255,255,255,.5)',
                         fontSize:'1.2rem'
-                    }} />
+                    }} value={this.props.state.name} onChange={(e) => this.props.setState(e)} />
                 </div>
             </div>
         );
