@@ -28,7 +28,7 @@ class App extends Component {
         return (
             <div>
                 <Header firstMove={this.state.result.results[0]} />
-                <Carts />
+                <Carts moves={this.state.result.results}/>
             </div>
         );
     }
