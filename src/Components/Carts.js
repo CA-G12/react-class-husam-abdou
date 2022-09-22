@@ -3,7 +3,6 @@ import Cart from "./Cart";
 
 class Carts extends Component {
     render() {
-        console.log(this.props.moves)
         return (
             <div style={{
                 backgroundColor:'#607d8b4a',
