@@ -17,8 +17,8 @@ class Header extends Component {
                     width: '40%',
                     height:'50vh'
                 }}>
-                    <h1>{this.props.firstMove.title}</h1>
-                    <p>{this.props.firstMove.overview}</p>
+                    <h1 style={{ marginLeft: '5px' }}>{this.props.firstMove.title}</h1>
+                    <p style={{ marginLeft: '5px' }}>{this.props.firstMove.overview}</p>
                 </div>
             </div>
        )

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Header from './Components/Header';
 import './App.css'
 import Carts from './Components/Carts';
-
+import Navbar from './Components/Navbar';
 class App extends Component {
 
 
@@ -49,6 +49,7 @@ class App extends Component {
         if (!this.state.result.length) return <h1>Loading...</h1>
         return (
             <div>
+                <Navbar />
                 <Header firstMove={this.state.result[0]} />
                 <Carts moves={this.state.result} />
                 <div style={{
